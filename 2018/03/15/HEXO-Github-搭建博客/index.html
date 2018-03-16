@@ -29,7 +29,7 @@
 <meta property="og:image" content="c:/Users/刘梦雅/AppData/Local/Temp/1521119513300.png">
 <meta property="og:image" content="c:/Users/刘梦雅/AppData/Local/Temp/1521120138595.png">
 <meta property="og:image" content="c:/Users/刘梦雅/AppData/Local/Temp/1521120467475.png">
-<meta property="og:updated_time" content="2018-03-15T13:47:00.990Z">
+<meta property="og:updated_time" content="2018-03-16T02:02:46.923Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HEXO + Github 搭建博客">
 <meta name="twitter:description" content="​        想写博客很久了，因为自己的许多学习工作总是随着时间慢慢被遗忘，所以今天我开始了自己的第一篇博客。学生党，还请各位看客们多多批评指正！ ​        今天要介绍的就是怎么用Hexo和Github搭建博客，花了一下午才建起来的，记录分享一下。 步骤一：安装Note.js​        官网：https://nodejs.org/en/ 下载与自己电脑配置一致的版本。如图所示：">
@@ -152,6 +152,7 @@
 <p><img src="C:\Users\刘梦雅\AppData\Local\Temp\1521119513300.png" alt="52111951330"></p>
 <p>新建一个new ssh key，将id_rsa.pub文件里的内容复制上去（目录：C:\Users\刘梦雅.ssh，默认安装的话就应该在类似的目录中），保存后如上图。输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了。</p>
 <h4 id="3-配置Deployment，在最开始新建的文件夹中，找到-config-yml文件，修改repo值（在末尾）"><a href="#3-配置Deployment，在最开始新建的文件夹中，找到-config-yml文件，修改repo值（在末尾）" class="headerlink" title="3.配置Deployment，在最开始新建的文件夹中，找到_config.yml文件，修改repo值（在末尾）"></a>3.配置Deployment，在最开始新建的文件夹中，找到_config.yml文件，修改repo值（在末尾）</h4><p><img src="C:\Users\刘梦雅\AppData\Local\Temp\1521120138595.png" alt="52112013859"></p>
+<p>注意：type、repo、branch的冒号后必须要有空格，图上有错。</p>
 <h3 id="步骤六：新建博客"><a href="#步骤六：新建博客" class="headerlink" title="步骤六：新建博客"></a>步骤六：新建博客</h3><p>新建一篇博客，在cmd执行命令：hexo new post “博客名”，在文件夹_posts目录（E:\blog\source_posts）下将会看到已经创建的文件。</p>
 <p><img src="C:\Users\刘梦雅\AppData\Local\Temp\1521120467475.png" alt="52112046747"></p>
 <p>在生成以及部署文章之前，需要安装一个扩展：npm install hexo-deployer-git –save</p>
